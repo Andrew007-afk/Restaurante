@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    --pomp-and-power: #8d6b94ff;
+--african-violet: #b185a7ff;
+--rosy-brown: #c3a29eff;
+--pearl: #e8dbc5ff;
+--linen: #fff4e9ff;
+}
+
+
+
+/*XXXXXXXXXXXXXXXX BARRA LATERAL XXXXXXXXXXXXXXXXXX*/
+
+body{
+    
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-areas: "zh zm";
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    background-color: #251605;
+    z-index: zh;
+    display: grid;
+    grid-template-rows: 20% 1fr 20%;
+    grid-template-areas: "zlogo" "zlist" "zc";
+    
+
+}
+
+header p{
+    font-family: 'Kay Pho Du', serif;
+    font-size: 20px;
+}
+
+header img{
+    width: 80px;
+}
+
+#conteinerCarrito{
+    grid-area: zc;
+    width:100%;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#conteinerCarrito #img{
+    align-items: center;
+    background-color: rgb(57, 133, 57);
+    width: 70px;
+    border-radius:70%;
+}
+
+#conteinerCarrito #img img{
+    width: 50px;
+    padding: 10px;
+}
+
+#conteinerCarrito #precio{
+    margin-top: 15px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+header #conteinerLogo{
+    background-color: #F6E27F;
+    border-radius: 100%;
+    padding: 20px;
+    grid-area: zlogo;
+    margin: 25px auto;
+    width: 100px;
+    height: 120px;
+    text-align: center;
+}
+
+header #conteinerLogo .img{
+    margin-top: 0;
+}
+
+header #lista{
+    position: relative;
+    margin: auto;
+    z-index: zlist;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70px;
+    height: 70%;
+}
+
+header #lista div{
+    color: white;
+    transition: all .3s;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+header #lista div:hover{
+    background-color: #F6E27F;
+    font-size: 20px;
+    transition: all .3s;
+}
+
+header #lista div a:hover{
+    color: black;
+    transition: color .3s;
+}
+
+
+/*XXXXXXXXXXXXXXXX  BIENVENIDA XXXXXXXXXXXXXXXXXX*/
+
+#conteinerHeader{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 400px;
+    margin-top: 200px;
+}
+
+#conteinerBienvenida{
+    background-color: #fceada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#conteinerBienvenida #bloc{
+    background-color: #C3A29E;
+    margin: 50px auto;
+    display: flex;
+    width: 80%;
+    
+}
+
+#conteinerBienvenida #bloc #texto{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+#conteinerBienvenida #bloc #texto #img{
+    display: flex;
+    justify-content: center;
+}
+
+#conteinerBienvenida #bloc #texto #img img{
+    /*width: 280px;*/
+    width: 60%;
+}
+
+#conteinerBienvenida #bloc #texto #textoInicio{
+    width: 90%;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#conteinerBienvenida #bloc #texto #comida{
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+#conteinerBienvenida #bloc #texto #comida #arroz{
+    transition: all 1s;
+}
+
+#conteinerBienvenida #bloc #texto #comida #ensaladas{
+    display: none;
+}
+
+#conteinerBienvenida #bloc #texto #comida #carnes{
+    display: none;
+}
+
+#conteinerBienvenida #bloc #parrafo{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#conteinerBienvenida #bloc #parrafo p{
+    background-color: white;
+    border-radius: 20px;
+
+    width: 80%;
+    padding: 20px;
+}
+
+main{
+    z-index: zm;
+    background-color: white;
+}
+
+/*XXXXXXXXXXXXXXXX PRODUCTOS XXXXXXXXXXXXXXXXXX*/
+#titulo{
+    width: 90%;
+    background-color:#fceada; 
+    margin: auto; 
+    font-size: 30px; 
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Noto Serif Balinese', serif;
+}
+
+
+main #conteinerProd{
+    background-color: #fceada;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 0;
+    margin: auto;
+}
+
+
+
+main #conteinerProd .caja:hover{
+    box-shadow: 12px 12px 20px black;
+    transform: translateY(-5px);
+    transition: transform .5s;
+}
+
+main #conteinerProd div div{
+    height: 300px;
+    width: 250px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+main #conteinerProd div{
+    
+    background-color: #C3A29E/*rgb(247, 247, 247)*/;
+    height: 500px;
+    margin: 20px;
+    transition: all .3s;
+}
+
+main #conteinerProd .img{
+    cursor: pointer;
+}
+
+main #conteinerProd .nn{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.568);
+    display: none;
+    align-items: end;
+    justify-content: center;
+    transition: display 1s;
+}
+
+main #conteinerProd .nn  .boton{
+    background-color: #E8DBC5;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 90%;
+    text-align: center;
+    border: solid black 1px;
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 25px;
+    transition: all 1s;
+    font-weight: bold;
+}
+
+main #conteinerProd .nn .boton:hover{
+    font-size: 17px;
+    background-color: #b65e54;
+    transition: all .5s;
+}
+
+main #conteinerProd .nn  .botonA{
+    background-color: #E8DBC5;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 90%;
+    text-align: center;
+    border: solid black 1px;
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 25px;
+    transition: all 1s;
+    font-weight: bold;
+}
+
+main #conteinerProd .nn .botonA:hover{
+    font-size: 17px;
+    background-color: white;
+    transition: all .5s;
+}
+
+main #conteinerProd .nn .cerrar{
+    cursor: pointer;
+    width: 35px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: width .4s;
+}
+
+main #conteinerProd .nn .cerrar:hover{
+    width: 40px;
+    transition: width .4s;
+
+}
+
+
+
+main #conteinerProd #n7 .agotado{
+    background-color: rgb(102, 162, 202);
+    border-radius: 90%;
+    text-align: center;
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+main #conteinerProd #n7 .agotado:hover{
+    background-color: whitesmoke;
+    color: rgb(102, 102, 102);
+}
+
+main #conteinerProd #n1{
+    background-image: url(./platos/img1.jpg);
+}
+
+main #conteinerProd #n2{
+    background-image: url(./platos/img2.jpg);
+}
+
+main #conteinerProd #n3{
+    background-image: url(./platos/img3.jpg);
+}
+
+main #conteinerProd #n4{
+    background-image: url(./platos/img4.jpg);
+}
+
+main #conteinerProd #n5{
+    background-image: url(./platos/img5.jpg);
+}
+
+main #conteinerProd #n6{
+    background-image: url(./platos/img6.jpg);
+}
+
+main #conteinerProd #n7{
+    background-image: url(./platos/img7.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+main #conteinerProd div div div{
+    height: 20px;
+    background-color: none;
+    border: none;
+    margin-top: 8px;
+}
+
+main #conteinerProd div .text{
+    height: 50px;
+    border: none;
+    margin-top: 10px;
+}
+
+main #conteinerProd div .text div{
+    margin-top: 5px;
+    width: 90%;
+}
+
+/*XXXXXXXXXXXXXXXX FORMULARIO XXXXXXXXXXXXXXXXXX*/
+
+#formulario{
+    width: 90%;
+    background-color: #fceada;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#formulario form{
+    width: 60%;
+    background-color: #C3A29E;
+    border-radius: 15px;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 800px;
+}
+
+#formulario form #header{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-family: 'Noto Serif Balinese', serif;
+    border-bottom: solid 2px;
+}
+
+#formulario form #contNombre{
+    width: 80%;
+    height: 20%;
+}
+
+#formulario form .txt{
+    margin-left: 30px;
+    width: 200px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#formulario form .input{
+    width: 60%;
+    margin-left: 30%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    padding-left: 5px;
+    transition: background-color .3s;
+}
+
+#formulario form .input:hover{
+    background-color: #f3dbd9;
+    transition: background-color .3s;
+}
+
+#formulario form #contFecha{
+    width: 80%;
+    height: 20%;
+}
+
+#formulario form #contObs{
+    width: 80%;
+    height: 30%;
+}
+
+#formulario form #contObs input{
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

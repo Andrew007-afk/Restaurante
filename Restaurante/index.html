@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@500&display=swap"     rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap"     rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300&display=swap" rel="stylesheet">
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="shortcut icon" href="./img/bonfire.png">
+
+    <title>Cocina de leña</title>
+</head>
+<body onload="Onload()">
+
+    <header>
+
+        <div id="conteinerHeader">
+            <div id="conteinerLogo">
+                <img src="./img/bonfire.png" alt="">
+                <p>Cocina de leña</p>
+            </div>
+    
+            <div id="lista">
+                <div id="#conteinerBienvenida"><a href="">Conócenos</a></div>
+                <div id=""><a href="#titulo">Platos</a></div>
+                <div id=""><a href="#formulario">Reserva</a></div>
+            </div>
+
+            <div id="conteinerCarrito">
+                <div id="img"><img src="./img/shopping-cart.png" alt=""></div>
+                <div id="precio"></div>
+            </div>
+        </div>
+    
+    </header>
+
+
+    <main>
+        <!--XXXXXXXXXX Zona de bienvenida XXXXXXXXXXXX-->
+        <div id="conteinerBienvenida">
+            <div id="bloc">
+                <div id="texto">
+                    <div id="img"><img  src="./img/oven.png" alt=""></div>
+                    <div id="textoInicio">¡Bienvenido! Ven y prueba</div> 
+                    <div id="comida"> <div id="arroz" style="color: rgb(224, 217, 111);">Arroces</div> <div id="carnes" style="color: brown;">Carnes</div> </div>
+                </div>
+
+                <div id="parrafo"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsa aliquam, id laudantium distinctio iure ipsam vero praesentium deserunt placeat ullam expedita ad perferendis eius unde hic sint pariatur? Commodi.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, temporibus enim suscipit rerum molestias libero est reprehenderit minima adipisci, eos quod aut repudiandae at distinctio ex. Eius facilis maiores dolore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis voluptatum facere tempora enim beatae accusantium explicabo sapiente, iusto sed exercitationem illo ea ad corporis commodi nesciunt asperiores aperiam necessitatibus.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--XXXXXXXXXX Zona de productos XXXXXXXXXXXX-->
+        <div id="titulo">Mira nuestros menus </div>
+        <div id="conteinerProd">
+            <div id="contN1" class="caja">
+                <div id="nn1" class="nn">
+                    <img class="cerrar" onclick="fCerrar1()" src="./img/cross.png" alt="">
+                    <button onclick="add1()" class="boton">Añadir</button>
+                </div>
+                <div id="n1" class="img" 
+                onclick="fAñadir1()"></div>
+                <div class="text">
+                    <div style=" height: 45px;">Pack Dieta Antiinflamatoria Vegetariano</div> 
+                    <div>24.40€</div>
+                    <div><img src="./img/rating.png" alt="" style="width: 70px; padding: 0px;"  ></div>
+                    
+                </div>
+            </div>
+
+            <div id="contN2" class="caja">
+                <div id="nn2" class="nn">
+                    <img class="cerrar" onclick="fCerrar2()" src="./img/cross.png" alt="">
+                    <button onclick="add2()" class="boton">Añadir</button>
+                </div>
+                <div id="n2" class="img" onclick="fAñadir2()"></div>
+                <div class="text">
+                    <div>Pack Platos Principales</div> 
+                    <div style="display: flex;"><div style="text-decoration-line: line-through; color: white; margin: 0px; width: 60px; margin-right: 10px;">41.70€</div> <div style="margin: 0px;">25.70€</div></div>
+                    <div><img src="./img/rating.png" alt="" style="width: 70px; padding: 0px;"  ></div>
+                </div>
+            </div>
+
+            <div id="contN3" class="caja">
+                <div id="nn3" class="nn">
+                    <img class="cerrar" onclick="fCerrar3()" src="./img/cross.png" alt="">
+                    <button class="boton" onclick="add3()">Añadir</button>
+                </div>
+                <div id="n3" class="img" onclick="fAñadir3()"></div>
+                <div class="text">
+                    <div>Pack Cuchara</div> 
+                    <div style="display: flex;"><div style="text-decoration-line: line-through; color: white; margin: 0px; width: 60px; margin-right: 10px;">25.50€</div> <div style="margin: 0px;">18.70€</div></div>
+                    <div><img src="./img/rating.png" alt="" style="width: 70px; padding: 0px;"  ></div>
+                </div>
+            </div>
+
+            <div id="contN4" class="caja">
+                <div id="nn4" class="nn">
+                    <img class="cerrar" onclick="fCerrar4()" src="./img/cross.png" alt="">
+                    <button class="boton" onclick="add4()">Añadir</button>
+                </div>
+                <div id="n4" class="img" onclick="fAñadir4()"></div>
+                <div class="text">
+                    <div>Pack Vegetariano</div>  
+                    <div>22.80</div>
+                    <div><img src="./img/rating.png" alt="" style="width: 70px; padding: 0px;"  ></div>
+                </div>
+            </div>
+
+            <div id="contN5" class="caja">
+                <div id="nn5" class="nn">
+                    <img class="cerrar" onclick="fCerrar5()" src="./img/cross.png" alt="">
+                    <button class="boton" onclick="add5i6()">Añadir</button>
+                </div>
+                <div id="n5" class="img" onclick="fAñadir5()"></div>
+                <div class="text">
+                    <div>Pack Dieta #2</div> 
+                    <div>25.50€</div>
+                    <div><img src="./img/rating.png" alt="" style="width: 70px; padding: 0px;"  ></div>
+                </div>
+            </div>
+
+            <div id="contN6" class="caja">
+                <div id="nn6" class="nn">
+                    <img class="cerrar" onclick="fCerrar6()" src="./img/cross.png" alt="">
+                    <button class="boton" onclick="add5i6()">Añadir</button>
+                </div>
+                <div id="n6" class="img" onclick="fAñadir6()"></div>
+                <div class="text">
+                    <div>Pack Dieta #1</div> 
+                    <div>25.50€</div>
+                    <div><img src="./img/rating.png" alt="" style="width: 70px; padding: 0px;"  ></div>
+                </div>
+            </div>
+            
+            <div id="contN7" class="caja">
+                <div id="nn7" class="nn">
+                    <img class="cerrar" onclick="fCerrar7()" src="./img/cross.png" alt="">
+                    <button class="botonA">Agotado</button>
+                </div>
+                <div id="n7" class="img" onclick="fAñadir7()" style="margin-bottom: 0;">
+                    
+                </div>
+                <div class="text" style="margin-top: 0;">
+                    <div>Salmorejo Con Huevo y Jamón Serrano</div> <br>
+                    <div>3.80€</div>
+                    <div><img src="./img/rating.png" alt="" style="width: 70px; padding: 0px;"  ></div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <!--XXXXXXXXXX Reserva XXXXXXXXXXXX-->
+        <div id="formulario">
+            <form action="">
+
+                <div id="header">
+                    Dinos cuando puedes visitarnos
+                </div>
+                <div id="contNombre">
+                    <div id="nombre" class="txt">Nombre</div>
+                    <input id="nombreInput"  class="input" type="text">
+                </div>
+
+                <div id="contFecha">
+                    <div id="fecha" class="txt">Fecha de tu reserva</div>
+                    <input class="input" id="fechaInput" type="date">
+                </div>
+
+                <div id="contObs">
+                    <div id="observaciones" class="txt">Observaciones</div>
+                    <input id="obsInput" class="input" type="text">
+                </div>
+
+                <input type="submit" name="fechaInput" onclick="fConsola()" class="input" style="margin: auto; margin-bottom: 30px; height: 60px; font-weight: bold;">
+            </form>
+        </div>
+        
+    </main>
+</body>
+</html>
